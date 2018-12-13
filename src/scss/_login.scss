@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+// 登录
+//导航水平居中
+.relive {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 60px;
+}
+
+.main {
+    height: 588px;
+    background: url(https://www.konka.com/public/images/ea/6b/94/8ef1017fb79ec84979aef0dad329ac020df7eaeb.jpg?58135_OW1920_OH588);
+    background-size: 100% 100%;
+
+    //右边白框
+    .log_msg {
+        width: 450px;
+        height: 313px;
+        float: right;
+        margin-top: 105px;
+        background-color: #fff;
+
+        //顶部标题
+        .msg_top {
+            // height: 43px;
+            padding: 10px 15px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #ddd;
+
+            &>span {
+                cursor: pointer;
+                float: right;
+                padding: 5px;
+                background-color: #f99e1e;
+                margin-top: -2px;
+                color: #fff;
+            }
+        }
+
+        form {
+            &>div {
+                position: relative;
+            }
+
+            //整体输入框
+            input {
+                margin: 10px;
+                width: 340px;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            }
+            .s_check{
+                background-color: pink;
+            }
+            label.error {
+                position: absolute;
+                top: 9px;
+                left: 450px;
+                padding: 10px 14px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                background-color: #fff;
+                border-radius: 2px;
+                white-space: nowrap;
+            }
+
+            .arrow {
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-width: 11px;
+                position: absolute;
+                top: 17px;
+                left: 428px;
+                border-style: solid;
+                border-right-color: rgba(0, 0, 0, .25);
+            }
+
+            .arrowHid {
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-width: 11px;
+                position: absolute;
+                top: -11px;
+                left: -10px;
+                border-style: solid;
+                border-right-color: #fff;
+            }
+
+            .check {
+                width: 155px;
+            }
+
+            .fwidth {
+                width: 70px;
+                display: inline-block;
+                text-align: right;
+                margin-left: 5px;
+                margin-right: 10px;
+                vertical-align: middle;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            //a标签
+            .change {
+                font-size: 12px;
+                color: #aaa;
+            }
+
+            //多选框
+            .rem {
+                width: auto;
+                height: auto;
+                margin-left: 95px;
+            }
+
+            //忘记密码
+            .forget {
+                cursor: pointer;
+                display: inline-block;
+                color: #aaa;
+                margin-left: 170px;
+            }
+
+            .worning {
+                width: 54px;
+                height: 34px;
+                border: none;
+                color: #fff;
+                background-color: #7a271c;
+                margin-left: 95px;
+                margin-top: 10px;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+
+    //注册
+    .hig_msg {
+        height: 362px;
+
+        .danger {
+            background-color: #7a271c !important;
+        }
+
+        .worning {
+            background-color: #f99e1e !important;
+        }
+    }
+}

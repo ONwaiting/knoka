@@ -1,0 +1,2 @@
+本数据库密码设为了root
+registor.php上面有一个绝对路径

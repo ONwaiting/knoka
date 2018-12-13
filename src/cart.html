@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="script/thirdplugins/require.js" async="true" defer data-main="./script/js/main.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="cart">
+        <div class="cart_con wid mid">
+            <div class="cart_title">
+                购物车 <small>Shopping Cart</small>
+            </div>
+            <div class="notice">
+                <i class="iconfont">&#xe6ff;</i>您当前未登录，登录后享受会员专属折扣及优惠促销，更可长久保存购物车数据 <span>立即登录</span>
+            </div>
+            <div class="goods">
+                <ul class="goods_title clearfix til_col">
+                    <li><input type="checkbox" name="" id="" class="all choose" checked>全选</li>
+                    <li class="goods_list">商品</li>
+                    <li class="price_one">单价</li>
+                    <li class="count">数量</li>
+                    <li class="price_all">小计</li>
+                    <li class="options">操作</li>
+                </ul>
+                <!-- 加载动态数据 -->
+                <div class="change_cart">
+                </div>
+
+
+                <ul class="goods_title clearfix pay_style">
+                    <li><input type="checkbox" name="" id="" class="all choose" checked>全选</li>
+                    <li class="options"><small class="del_all">删除选中</small></li>
+                    <li class="pay"><button>去结算</button></li>
+                    <li class="pay_info">
+                        <p>已选择<span class="pay_count">1</span>件商品,优惠后金额：<span class="pay_price">￥1799.00</span></p>
+                        <p>件商品,优惠后金额 <span class="jianjia">￥0.00</span></p>
+                        <p>促销优惠节省了：<span class="cujian">￥100.00</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@charset "utf-8";
+//item布局混合
+@mixin item() {
+    padding: 25px 10px 0;
+    float: left;
+    width: 270px;
+    height: 340px;
+
+    &>a {
+        display: block;
+        width: 250px;
+        height: 190px;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            z-index: 0;
+        }
+    }
+
+    p {
+        position: relative;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 30px;   
+    }
+    .p1 {
+        margin-top: 15px;
+        font-size: 16px;
+        color: #222;
+    }
+    .p2{
+        color: #989898;
+        font-size: 14px;
+    }
+    .p3{
+        color: red;
+        span {
+            text-decoration: line-through;
+            color: #b0b0b0;
+        }
+    }
+}
+
+//明星产品
+@mixin h2font() {
+    float: left;
+    color: #767676;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.star_con {
+    overflow: hidden;
+    padding-bottom: 50px;
+    // .star_title {
+
+    // }
+
+    h2 {
+        @include h2font;
+
+        &:hover {
+            color: black;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    }
+
+    .star_btn {
+        float: right;
+        padding-top: 5px;
+
+        button {
+            cursor: pointer;
+            padding: 3px;
+            color: #767676;
+            border: 1px solid #767676;
+            background-color: transparent;
+            &:hover {
+                color: black;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .star_show {
+        width: 10000px;
+        height: 340px;
+        position: relative;
+        left: 0;
+        &>.items {
+            background-color: #f7f7f7;
+            // padding: 25px 10px 10px;
+            margin-right: 20px;
+            @include item();
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}

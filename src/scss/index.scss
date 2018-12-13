@@ -1,0 +1,19 @@
+.wid {
+    width: 1140px;
+}
+
+.last {
+    margin-right: 0!important;
+}
+
+
+@import "variable";//变量
+@import "_top-log";//顶部
+@import "banner";
+@import "star";
+@import "item";
+@import "upstairs";
+@import "login";
+@import "cart";
+@import "details";
+@import "btm";//底部

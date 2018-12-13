@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+.banner {
+
+    //轮播
+    .show {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+
+        .imgs {
+            position: absolute;
+            width: 1920px;
+            height: 500px;
+
+            li {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+            }
+        }
+
+
+
+        &>button {
+            width: 50px;
+            position: absolute;
+            right: -100px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3em;
+            font-weight: bolder;
+            color: #fff;
+            cursor: pointer;
+            background: transparent;
+            border:none;
+        }
+
+        &>.leftBtn {
+            font-size: 3em;
+        }
+
+        &>.rightBtn {
+            font-size: 3em;
+        }
+
+        .leftBtn {
+            left: -100px;
+        }
+    }
+
+    //导航
+    .ban_con {
+        position: absolute;
+        top: 0;
+        height: 500px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        &>.nav_left {
+            width: 234px;
+            height: 500px;
+            padding: 25px 0;
+            background-color: rgba(0, 0, 0, .5);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+            &>li {
+                width: 234px;
+                line-height: 45px;
+                padding: 0 30px;
+                color: #fff;
+                cursor: pointer;
+
+                &>span {
+                    float: right;
+                }
+
+                &:hover {
+                    background-color: red;
+                }
+                &:hover>.shangpin{
+                    display: block;
+                }
+
+                
+            }
+        }
+
+        //圆点
+        .dot {
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+            text-align: center;
+
+            li {
+                width: 45px;
+                height: 4px;
+                display: inline-block;
+                margin:2px;
+                background-color: #fff;
+                cursor: pointer;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .active {
+                background: #ed1c24;
+            }
+        }
+        .shangpin {
+            position: absolute;
+            top: 0;
+            left: 234px;
+            width: 454px;
+            height: 500px;
+            background-color: #fff;
+            display: none;
+            &>ul {
+                float: left;
+                &>li {
+                    width: 226px;
+                    height: 77px;
+                    padding: 20px;
+                    img {
+                        vertical-align: middle;
+                    }
+                    span{
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+    }
+}
+//小菜单
+.men_con{
+    padding: 20px 0 50px 0;
+    .men_item{
+        cursor: pointer;
+        float: left;
+        width: 270px;
+        height: 180px;
+        margin-right:20px;
+        &:last-of-type{
+            margin:0; 
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .red0{
+            background-color: #f68387;
+        }
+        td{
+            text-align: center;
+            color: #fff;
+            width: 90px;
+            height: 90px;
+            background-color: #f2555b;
+            transition: 1s;
+            padding-top: 20px;
+            font-size: 14px;
+            b{
+                font-size: 2em;
+            }
+            p{
+                margin-top:5px;
+            }
+            &:hover{
+                background-color:red!important;
+            }
+        }
+    }
+}

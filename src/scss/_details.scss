@@ -1,0 +1,141 @@
+@charset "utf-8";
+//详情页
+.det_con {
+    margin-top: 60px;
+    height: 640px;
+    .position {
+        margin-bottom: 30px;
+        li {
+            float: left;
+        }
+        .active {
+            color: #ccc;
+        }
+    }
+    //放大镜中间主体部分
+    .del_main {
+        padding-top:20px;
+        &>div {
+            float: left;
+        }
+        //左边缩略图
+        .del_left {
+            margin-right: 30px;
+            margin-top: 30px;
+            &>a {
+                display: inline-block;
+                width: 72px;
+                text-align: center;
+                color: #ccc;
+                .iconfont {
+                    font-size: 1.5em;
+                }
+                margin-top: 10px;
+            }
+            .left_det_show {
+                position: relative;
+                height: 410px;
+                overflow: hidden;
+            }
+            ul{
+                position: absolute;
+                top: 0;
+            }
+            li {
+                width: 72px;
+                height: 72px;
+                border: 1px solid #e3e3e3;
+                padding: 2px;
+                margin: 10px 0;
+                &:hover {
+                    border: 2px solid red;
+                }
+                &>img {
+                    height: 64px;
+                    width: 64px;
+                }
+            }
+            .active{
+                border: 2px solid red;
+            }
+        }
+        //中间放大镜
+        .del_mid {
+            .box {
+                overflow: hidden;
+                position: relative;
+                width: 540px;
+                height: 540px;
+                border: 1px solid #e3e3e3;
+                padding: 5px;
+                margin-right:40px;
+                &>img {
+                    height: 530px;
+                    width: 530px;
+                }
+                .img_big{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 940px;
+                    height: 1112px;
+                    &>img{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        // top: -219px;
+                        // left: -29px;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        //右边详细信息
+        .del_right{
+            line-height: 1.42857143;
+            
+            &>strong{
+                display: inline-block;
+                margin-right:20px;
+            }
+            .del_title{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .del_price{
+
+                strong{
+                    color: #ed1c24;
+                    font-size: 24px;
+                }
+            }
+            pre{
+                margin:35px 0;
+                padding:15px 0;
+            }
+            //引入数量按钮混合
+            @include btncount();
+            .endbtn{
+                margin-top: 50px;
+                button{
+                    cursor: pointer;
+                    width: 190px;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0;
+                    font-size: 16px;
+                    color: #fff;
+                    border: none;
+                }
+                .now{
+                    background: #ed1c24;
+                    margin-right: 20px;
+                }
+                .addcar{
+                    background: #ff9f00;
+                }
+            }
+        }
+    }
+}

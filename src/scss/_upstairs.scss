@@ -1,0 +1,80 @@
+@charset "utf-8";
+// 楼梯
+.upstairs{
+    display: none;
+    position: fixed;
+    height: 405px;
+    top: 0;
+    left: 80px;
+    bottom: 0;
+    margin: auto 0;
+    &>ul{
+        li{
+            cursor: pointer;
+            color: #fff;
+            padding-top: 5px;
+            text-align: center;
+            width: 40px;
+            height: 45px;
+            background-color: #888;
+            border-bottom: 1px solid #fff;
+            &:last-of-type{
+                border: none;
+            }
+            &:hover{
+                background-color: red;
+            }
+            &:nth-of-type(2){
+                padding: 0;
+                line-height: 45px;
+            }
+            &:nth-of-type(3){
+                padding: 0;
+                line-height: 45px;
+            }
+            &:nth-of-type(5){
+                padding: 0;
+                line-height: 45px;
+            }
+        }
+        .active{
+            background-color: red;
+        }
+    }
+}
+.right_fix{
+    position: fixed;
+    right: 0;
+    top: 60%;
+    .item{
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        padding: 5px;
+        width: 42px;
+        height: 42px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        &>.iconfont{
+            font-size: 2em;
+            color: #aaa;
+        }
+        i{
+            position: absolute;
+  
+        }
+        span{
+            display: none;
+            width: 40px;
+            position: absolute;
+            left: 0;
+            top:5px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    .itemdong{
+        display: none;
+    }
+}

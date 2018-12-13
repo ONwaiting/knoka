@@ -1,0 +1,99 @@
+@charset "utf-8";
+//商品区主要布局
+@mixin nowrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+}
+.bg {
+    background-color: #f7f7f7;
+    // height: 7740px;
+    padding-bottom: 50px;
+
+    .tel_con {
+
+        //左边标题
+        h2 {
+            @include h2font;
+            margin: 50px 0 10px;
+
+            img {
+                vertical-align: middle;
+            }
+            &:hover{
+                color:black;
+            }
+        }
+
+        //中间大图
+        .tel_img {
+            cursor: pointer;
+        }
+
+        //右边小的导航
+        .tel_nav {
+            float: right;
+            margin-top: 70px;
+
+            li {
+                cursor: pointer;
+                float: left;
+
+                &:last-of-type {
+                    color: rgb(255, 91, 87);
+                }
+                &:hover{
+                    color: rgb(255, 91, 87);
+                }
+            }
+        }
+        //items展示区
+        .tel_show {
+            .items {
+                @include item();
+                background-color: #fff;
+                margin: 20px 20px 0 0;
+                transition: 0.5s;
+                &:last-of-type{
+                    margin-right: 0;
+                }
+                &:nth-of-type(4){
+                    margin-right: 0;
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+                }
+            }
+            .new_item{
+                cursor: pointer;
+                background-color: #eee;
+                width: 270px;
+                height: 300px;
+                float: left;
+                margin-right: 20px;
+                &:last-of-type{
+                    margin: 0;
+                }
+                h4{
+                    @include nowrap();
+                    white-space: nowrap;
+                }
+                .introduce{
+                    @include nowrap();
+                    height: 48px;
+                    line-height: 20px;
+                    font-size: 12px;
+                    color: #b0b0b0;
+                }
+                .reading{
+                    display: inline-block;
+                    color: #4b98ec;
+                    font-size: 12px;
+                    padding: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

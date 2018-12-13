@@ -1,0 +1,129 @@
+@charset "utf-8";
+//底部最上面有图标部分
+.btm_con{
+    padding:40px 0 20px;
+    border-bottom: 1px solid $bordercolor;
+    .btm_item{
+        position: relative;
+        float: left;
+        width: 228px;
+        padding-left:60px;
+        .btm_big{
+            color: $fontcolor;
+            font-size: 18px;
+        }
+        .btm_sml{
+            display: inline-block;
+            margin-top:15px;
+            color: $fontcolor;
+            font-size: 85%;
+        }
+        &>.iconfont{
+            font-size: 1.5em;
+            color: $fontcolor;
+        }
+        b{
+            position: absolute;
+            left: 20px;
+            top: 5px;
+        }
+    }
+}
+//底部中间联系地址部分
+.contact_con{
+    padding: 50px 0;
+    height: 421px;
+    //左边
+    .con_left{
+        float: left;
+        &>ul{
+            float: left;
+            li{
+                position: relative;
+                width: 140px;
+                height: 35px;
+                a{
+                    font-size: $fontsize;
+                    color: $fontcolor;
+                    &:hover{
+                        color: #ff5d59;
+                    }
+                }
+                .active{
+                    font-weight: 700;
+                    color: #333;
+                }
+                .weixin{
+                    width: 90px;
+                    height: 90px;
+                    position: absolute;
+                    left: 50px;
+                    top: -35px;
+                    display: none;
+                    z-index: 2;
+                }
+                &:hover .weixin{
+                    display: block;
+                }
+            }
+        }
+    }
+    //右边
+    .con_right{
+        float: right;
+        width: 250px;
+        height: 125px;
+        border-left:1px solid $bordercolor;
+        text-align: center;
+        h3{
+            color: #6f6c71;
+            margin:0 0 20px;
+        }
+        p{
+            color: #ff5d59;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        span{
+            display: inline-block;
+            border:1px solid #ff5d59;
+            padding: 5px 10px;
+            color: #ff5d59;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+.btm_logo{
+    background-color: #313131;
+    line-height: 100px;
+    .blo_left{
+        float: left;
+        &>img{
+            display: inline;
+            vertical-align: middle;
+        }
+    }
+    .blo_right{
+        float: right;
+        li{
+            cursor: pointer;
+            float: left;
+            font-size: 12px;
+            color: #666;
+            span{
+                display: inline-block;
+                color: #666!important;
+                margin-right: 5px;
+            }
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+//最下面广告图片
+.btm_ad{
+    padding: 10px;
+    text-align: center;
+}
